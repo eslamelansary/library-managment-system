@@ -37,12 +37,13 @@ $ docker pull mysql:latest
 Run a MySQL container with the necessary credentials:
 
 $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3010:3306 -d mysql:latest
+mysql CREATE DATABASE library_management_system;
 
 ### Step 4: Generate Database Migrations
 
 Run the following command to generate database migration files:
 
-$ npm run migration:generate
+$ npm run migration:generate -- src/database/migrations/init
 
 ### Step 5: Run Database Migrations
 
@@ -50,12 +51,12 @@ Apply the migrations to set up the database schema:
 
 $ npm run migration:run
 
-### Step 7: Seed the Database
+### Step 6: Seed the Database
 
 Seed the database with initial data:
 $ npm run seeder
 
-#### Step 8: Start the Application
+#### Step 7: Start the Application
 
 Finally, run the application:
 
