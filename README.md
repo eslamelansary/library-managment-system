@@ -36,8 +36,9 @@ $ docker pull mysql:latest
 
 Run a MySQL container with the necessary credentials:
 
-$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3010:3306 -d mysql:latest
-mysql CREATE DATABASE library_management_system;
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3010:3306 -d mysql:latest -e "CREATE DATABASE library_management_system;"
+
+In your Database IDE Run => 'CREATE DATABASE library_management_system';
 
 ### Step 4: Generate Database Migrations
 
