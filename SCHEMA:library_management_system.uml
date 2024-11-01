@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.SCHEMA:library_management_system</OriginalElement>
+  <nodes>
+    <node x="-64.0" y="500.5">5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.borrowed_books</node>
+    <node x="209.5" y="-184.5">5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.roles</node>
+    <node x="191.5" y="100.5">5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.users</node>
+    <node x="-146.5" y="23.5">5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.books</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.borrowed_books" target="5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.users" relationship="REFERENCES">
+      <point x="72.0" y="-107.5" />
+      <point x="152.0" y="468.0" />
+      <point x="280.0" y="468.0" />
+      <point x="0.0" y="107.5" />
+    </edge>
+    <edge source="5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.users" target="5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.roles" relationship="REFERENCES">
+      <point x="0.0" y="-107.5" />
+      <point x="0.0" y="52.5" />
+    </edge>
+    <edge source="5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.borrowed_books" target="5e2a66e8-e9e1-4cb7-a7e4-d842a227e8f4.TABLE:library_management_system.books" relationship="REFERENCES">
+      <point x="-72.0" y="-107.5" />
+      <point x="8.0" y="468.0" />
+      <point x="0.0" y="468.0" />
+      <point x="0.0" y="184.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.8903365906623235" showDependencies="false" x="120.99999999999989" y="275.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
