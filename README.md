@@ -18,50 +18,51 @@ Follow these steps to set up and run the Library Management System:
 
 Clone this repository to your local machine:
 
-```bash
-$ git clone https://github.com/eslamelansary/library-managment-system.git
-$ cd library-management-system
+```$ git clone https://github.com/eslamelansary/library-managment-system.git```
+
+```$ cd library-management-system```
 
 ### Step 2: Install Project Dependencies
 
 Install the required npm packages:
 
-$ npm install
+`npm install`
 
 ### Step 3: Set Up the MySQL Database
 
 Pull the MySQL Docker image:
 
-$ docker pull mysql:latest
+```$ docker pull mysql:latest```
 
 Run a MySQL container with the necessary credentials:
 
-$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3010:3306 -d mysql:latest -e "CREATE DATABASE library_management_system;"
+```$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3010:3306 -d mysql:latest```
 
-In your Database IDE Run => 'CREATE DATABASE library_management_system';
+In your Database IDE run `CREATE DATABASE library_management_system` ;
 
 ### Step 4: Generate Database Migrations
 
 Run the following command to generate database migration files:
 
-$ npm run migration:generate -- src/database/migrations/init
+`npm run migration:generate -- src/database/migrations/init`
 
 ### Step 5: Run Database Migrations
 
 Apply the migrations to set up the database schema:
 
-$ npm run migration:run
+`npm run migration:run`
 
 ### Step 6: Seed the Database
 
 Seed the database with initial data:
-$ npm run seeder
 
-#### Step 7: Start the Application
+`npm run seeder`
+
+### Step 7: Start the Application
 
 Finally, run the application:
 
-$ npm run start:dev
+`npm run start:dev`
 
 The application will be available at http://localhost:3000.
 
